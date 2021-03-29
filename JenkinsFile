@@ -1,42 +1,33 @@
 @Library('SharedLib@main') _
 
 pipeline {
-  agent any 
-	tools {
-		jdk 'JAVA_HOME'
+    agent any
+
+    tools {
+		jdk "JAVA_HOME"
 		git 'Default'
 		groovy 'GROOVY_HOME'
-	}
-	options {
-		buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '50')
-	}
+    }
 
     stages {
-	
-		stage('Checkout') {
-			steps {
-			 checkout(
-				branch: "main",
-				url: "https://github.com/MonikaPaulin/Release-Report-Jenkins-Pipeline.git"
-				)
-			}
-		}
-		
-		stage('Analyze') {
+        stage('Checkout') {
+            steps {
+                 echo 'check out'
+                 codecheckout()
+                }
+            
+        }
+        
+        stage('Analyze') {
 			steps {
 			analyze()
 			}
 		}
-
+		
 		stage('Email') {
 			steps {
 			emailnotify()
 			}
-		}		
-		
-	}
-
+		}
+    }
 }
-  
-
-  
