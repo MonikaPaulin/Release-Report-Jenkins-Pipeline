@@ -16,7 +16,7 @@ pipeline {
 		stage('Checkout') {
 			steps {
 			 checkout(
-				branch: "master",
+				branch: "main",
 				url: "https://github.com/MonikaPaulin/Release-Report-Jenkins-Pipeline.git"
 				)
 			}
