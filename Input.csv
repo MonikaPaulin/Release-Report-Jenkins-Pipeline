@@ -22,7 +22,7 @@ AppID,AppName,Environment,ReleaseVersion,Status
 123,CRS,DEV,2.5.6,UT Passed
 123,CRS,SIT,2.5.6,QA Passed
 123,CRS,UAT,2.5.6,QA Passed
-123,CRS,PROD,2.5,PROD Failed
+123,CRS,PROD,2.5.6,PROD Failed
 124,BFO,DEV,2.5,UT Passed
 124,BFO,SIT,2.5,QA Passed
 124,BFO,UAT,2.5,UAT Passed
