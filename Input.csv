@@ -26,3 +26,7 @@ AppID,AppName,Environment,ReleaseVersion,Status
 124,BFO,DEV,2.5,UT Passed
 124,BFO,SIT,2.5,QA Passed
 124,BFO,UAT,2.5,UAT Passed
+125,AWD,DEV,2.5.6,UT Passed
+125,AWD,SIT,2.5.6,QA Passed
+125,AWD,UAT,2.5.6,UAT Passed
+125,AWD,PROD,2.5.6,PROD Failed
